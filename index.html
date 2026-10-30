@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Panel - Premium Static Residential ISP Proxies</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            50: '#eefbf3',
+                            100: '#d7f7e2',
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                            900: '#064e3b',
+                        },
+                        darkbg: '#0a0d14',
+                        darkcard: '#121824',
+                        darkborder: '#1e293b'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Inter Font & FontAwesome Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0d14;
+            color: #f3f4f6;
+        }
+        .glow-effect {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.15);
+        }
+        .glow-effect:hover {
+            box-shadow: 0 0 30px -2px rgba(16, 185, 129, 0.3);
+        }
+        .amber-glow {
+            box-shadow: 0 0 20px -5px rgba(245, 158, 11, 0.15);
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col justify-between selection:bg-brand-500 selection:text-white">
+
+    <!-- Header / Navbar -->
+    <header class="border-b border-darkborder bg-darkcard/80 backdrop-blur-md sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+            <div class="flex items-center space-x-3">
+                <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-brand-400 to-brand-600 flex items-center justify-center text-slate-950 font-bold text-xl shadow-lg shadow-brand-500/20">
+                    <i class="fa-solid fa-network-wired"></i>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-white">Proxy <span class="text-brand-400">Panel</span></span>
+            </div>
+
+            <div class="flex items-center space-x-4">
+                <span class="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-amber-500/10 text-amber-400 border border-amber-500/20">
+                    <span class="w-2 h-2 mr-2 rounded-full bg-amber-400 animate-pulse"></span>
+                    Maintenance Mode
+                </span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 flex-1 w-full space-y-8">
+
+        <!-- System Alert / Maintenance Banner -->
+        <div class="bg-gradient-to-r from-amber-950/40 via-amber-900/20 to-amber-950/40 border border-amber-500/30 rounded-2xl p-6 text-center sm:text-left sm:flex items-center justify-between amber-glow relative overflow-hidden">
+            <div class="absolute -right-10 -bottom-10 w-40 h-40 bg-amber-500/5 rounded-full blur-2xl pointer-events-none"></div>
+            
+            <div class="flex items-start space-x-4 mb-4 sm:mb-0">
+                <div class="p-3 bg-amber-500/10 rounded-xl border border-amber-500/20 text-amber-400 flex-shrink-0">
+                    <i class="fa-solid fa-triangle-exclamation text-2xl"></i>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold text-amber-200">Automated Checkout Maintenance</h3>
+                    <p class="text-slate-300 text-sm mt-1 max-w-2xl">
+                        Our automated portal is currently undergoing scheduled system upgrade. All static ISP proxies are fully operational and available for instant direct purchase via email.
+                    </p>
+                </div>
+            </div>
+
+            <a href="#order-section" class="inline-flex items-center justify-center px-5 py-2.5 rounded-xl bg-amber-500 hover:bg-amber-400 text-slate-950 font-semibold text-sm transition-all duration-200 shadow-md flex-shrink-0">
+                <i class="fa-solid fa-envelope mr-2"></i> Order via Email
+            </a>
+        </div>
+
+        <!-- Service Overview Banner -->
+        <div class="bg-darkcard border border-darkborder rounded-2xl p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 glow-effect relative overflow-hidden">
+            <div class="space-y-3 max-w-2xl text-center md:text-left">
+                <div class="inline-flex items-center gap-2 px-3 py-1 rounded-md bg-brand-500/10 text-brand-400 text-xs font-semibold border border-brand-500/20">
+                    <i class="fa-solid fa-bolt"></i> 1Gbps Static Residential ISP
+                </div>
+                <h1 class="text-2xl sm:text-3xl font-extrabold text-white tracking-tight">
+                    Premium Static ISP Residential Proxies
+                </h1>
+                <p class="text-slate-400 text-sm leading-relaxed">
+                    Hosted directly on major ISP networks (AT&T, Comcast, Verizon, Deutsche Telekom, etc.) with unlimited bandwidth, non-sequential IP subnets, and guaranteed 99.9% uptime.
+                </p>
+            </div>
+
+            <div class="flex flex-col items-center justify-center p-4 bg-slate-900/60 rounded-xl border border-darkborder text-center min-w-[200px]">
+                <span class="text-xs text-slate-400 font-medium uppercase tracking-wider">Fixed Pricing</span>
+                <div class="text-3xl font-bold text-brand-400 my-1">$6.00 <span class="text-xs text-slate-400 font-normal">/ IP / 30 Days</span></div>
+                <span class="text-xs text-slate-500">Zero setup fees • Unlimited Traffic</span>
+            </div>
+        </div>
+
+        <!-- Location Selection Header & Search Bar -->
+        <div class="space-y-4">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+                <div>
+                    <h2 class="text-xl font-bold text-white flex items-center gap-2">
+                        <i class="fa-solid fa-globe text-brand-400"></i> Choose a Location
+                    </h2>
+                    <p class="text-sm text-slate-400">Available Static ISP IPs ready for manual deployment</p>
+                </div>
+
+                <!-- Search Input -->
+                <div class="relative min-w-[260px]">
+                    <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-3.5 text-slate-500 text-sm"></i>
+                    <input type="text" id="searchInput" onkeyup="filterLocations()" placeholder="Search country or ISP..." class="w-full bg-darkcard border border-darkborder rounded-xl pl-10 pr-4 py-2.5 text-sm text-slate-200 placeholder-slate-500 focus:outline-none focus:border-brand-500 transition">
+                </div>
+            </div>
+
+            <!-- Locations Grid -->
+            <div id="locationGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+
+                <!-- USA - Comcast -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇺🇸</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">United States (Comcast)</h4>
+                            <p class="text-xs text-slate-400">Static ISP • High Speed</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- USA - Verizon -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇺🇸</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">United States (Verizon)</h4>
+                            <p class="text-xs text-slate-400">Static ISP • Low Latency</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- Germany -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇩🇪</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">Germany (Deutsche Telekom)</h4>
+                            <p class="text-xs text-slate-400">Static Residential ISP</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- United Kingdom -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇬🇧</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">United Kingdom (BT Broadband)</h4>
+                            <p class="text-xs text-slate-400">Static Residential ISP</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- Canada -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇨🇦</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">Canada (Bell Canada)</h4>
+                            <p class="text-xs text-slate-400">Static ISP • Clean Subnets</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- France -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇫🇷</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">France (Orange Telecom)</h4>
+                            <p class="text-xs text-slate-400">Static ISP Proxy</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- Japan -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇯🇵</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">Japan (NTT Communications)</h4>
+                            <p class="text-xs text-slate-400">Static ISP • Asia Region</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- Australia -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇦🇺</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">Australia (Telstra)</h4>
+                            <p class="text-xs text-slate-400">Static ISP Residential</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+                <!-- Netherlands -->
+                <div class="location-card bg-darkcard border border-darkborder rounded-xl p-4 hover:border-brand-500/50 transition duration-200 flex items-center justify-between group">
+                    <div class="flex items-center space-x-3">
+                        <span class="text-2xl">🇳🇱</span>
+                        <div>
+                            <h4 class="font-semibold text-white text-sm group-hover:text-brand-400 transition">Netherlands (KPN)</h4>
+                            <p class="text-xs text-slate-400">Static ISP Proxy</p>
+                        </div>
+                    </div>
+                    <div class="text-right">
+                        <div class="text-sm font-bold text-brand-400">$6.00 <span class="text-[10px] text-slate-500 font-normal">/30d</span></div>
+                        <span class="inline-block text-[10px] bg-slate-800 text-slate-300 px-2 py-0.5 rounded border border-slate-700">Available</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- How to Order via Email Section -->
+        <div id="order-section" class="bg-darkcard border border-darkborder rounded-2xl p-6 sm:p-8 space-y-6 glow-effect">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between border-b border-darkborder pb-6 gap-4">
+                <div>
+                    <div class="text-xs font-semibold uppercase text-brand-400 tracking-wider mb-1">Direct Manual Order</div>
+                    <h2 class="text-2xl font-bold text-white">How to Purchase Proxies</h2>
+                    <p class="text-slate-400 text-sm mt-1">Due to active maintenance on our gateway, please send your order request directly to our desk.</p>
+                </div>
+
+                <!-- Email Box with Copy Button -->
+                <div class="flex items-center bg-slate-900 border border-darkborder p-1.5 rounded-xl">
+                    <span id="emailAddress" class="px-3 text-sm font-mono text-brand-400 select-all">proxypanel.drudge416@slmails.com</span>
+                    <button onclick="copyEmail()" id="copyBtn" class="bg-brand-500 hover:bg-brand-600 text-slate-950 px-4 py-2 rounded-lg text-xs font-bold transition flex items-center gap-1.5">
+                        <i class="fa-regular fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+
+            <!-- Email Requirements List -->
+            <div>
+                <h3 class="text-sm font-semibold text-slate-200 mb-3 uppercase tracking-wider">Please include the following details in your email:</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-darkborder flex items-start space-x-3">
+                        <div class="w-7 h-7 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold text-xs flex-shrink-0">1</div>
+                        <div>
+                            <span class="text-sm font-medium text-white">Quantity & Duration</span>
+                            <p class="text-xs text-slate-400 mt-0.5">Number of IPs required ($6.00 per IP / 30 Days).</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-darkborder flex items-start space-x-3">
+                        <div class="w-7 h-7 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold text-xs flex-shrink-0">2</div>
+                        <div>
+                            <span class="text-sm font-medium text-white">Country & ISP Preference</span>
+                            <p class="text-xs text-slate-400 mt-0.5">Target Country (e.g. US, UK, DE) and specific ISP (Comcast, Verizon, etc.).</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-darkborder flex items-start space-x-3">
+                        <div class="w-7 h-7 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold text-xs flex-shrink-0">3</div>
+                        <div>
+                            <span class="text-sm font-medium text-white">Target Usage / Purpose</span>
+                            <p class="text-xs text-slate-400 mt-0.5">Brief description of your use case to ensure subnet optimization.</p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-900/50 p-4 rounded-xl border border-darkborder flex items-start space-x-3">
+                        <div class="w-7 h-7 rounded-lg bg-brand-500/10 text-brand-400 flex items-center justify-center font-bold text-xs flex-shrink-0">4</div>
+                        <div>
+                            <span class="text-sm font-medium text-white">Preferred Payment Method</span>
+                            <p class="text-xs text-slate-400 mt-0.5">Crypto (USDT/BTC), Credit Card, or WebMoney invoice option.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pre-formatted Mailto Button -->
+            <div class="pt-2 text-center sm:text-left">
+                <a href="mailto:proxypanel.drudge416@slmails.com?subject=New%20Static%20ISP%20Proxy%20Order&body=Hello,%0A%0A1.%20Quantity:%201%20IP%20($6.00)%0A2.%20Country%20%26%20ISP:%20[e.g.%20US%20-%20Comcast]%0A3.%20Usage:%20[e.g.%20Account%20Management]%0A4.%20Preferred%20Payment:%20[Crypto/Card]%0A%0AThank%20you!" class="inline-flex items-center justify-center px-6 py-3 rounded-xl bg-brand-500 hover:bg-brand-600 text-slate-950 font-bold text-sm transition-all shadow-lg shadow-brand-500/20">
+                    <i class="fa-solid fa-paper-plane mr-2"></i> Open Email Client directly
+                </a>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="border-t border-darkborder bg-darkcard/50 py-6 mt-12">
+        <div class="max-w-7xl mx-auto px-4 text-center sm:flex sm:justify-between sm:items-center text-xs text-slate-500 space-y-2 sm:space-y-0">
+            <div>&copy; 2026 Proxy Panel. All rights reserved.</div>
+            <div class="flex justify-center space-x-6">
+                <span>Network Uptime: <strong class="text-brand-400 font-semibold">99.98%</strong></span>
+                <span>Speed: <strong class="text-white font-semibold">1 Gbps</strong></span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Notification Toast -->
+    <div id="toast" class="fixed bottom-5 right-5 bg-brand-500 text-slate-950 px-4 py-3 rounded-xl font-bold text-sm shadow-xl flex items-center gap-2 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none z-50">
+        <i class="fa-solid fa-circle-check"></i> Email copied to clipboard!
+    </div>
+
+    <!-- Scripts -->
+    <script>
+        // Copy Email Function
+        function copyEmail() {
+            const email = document.getElementById("emailAddress").innerText;
+            
+            // execCommand copy implementation
+            const tempInput = document.createElement("input");
+            tempInput.value = email;
+            document.body.appendChild(tempInput);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+
+            // Toast Animation
+            const toast = document.getElementById("toast");
+            toast.classList.remove("translate-y-20", "opacity-0");
+            
+            setTimeout(() => {
+                toast.classList.add("translate-y-20", "opacity-0");
+            }, 3000);
+        }
+
+        // Search Filter for Locations
+        function filterLocations() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const cards = document.getElementsByClassName('location-card');
+
+            for (let i = 0; i < cards.length; i++) {
+                const text = cards[i].innerText.toLowerCase();
+                if (text.includes(input)) {
+                    cards[i].style.display = "flex";
+                } else {
+                    cards[i].style.display = "none";
+                }
+            }
+        }
+    </script>
+</body>
+</html>
